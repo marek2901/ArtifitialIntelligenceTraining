@@ -1,22 +1,28 @@
 package com.company;
 
+import com.company.breadth.first.search.BfsTester;
+import com.company.depth.first.search.iterative.DepthFirstSearchTester;
+import com.company.depth.first.search.recursive.RecursiveDepthFirstSearchTester;
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        BreadthFirstSearch bfs = new BreadthFirstSearch();
-
-        Vertex vertex1 = new Vertex(1);
-        Vertex vertex2 = new Vertex(2);
-        Vertex vertex3 = new Vertex(3);
-        Vertex vertex4 = new Vertex(4);
-        Vertex vertex5 = new Vertex(5);
-
-        vertex1.addNeighbour(vertex2);
-        vertex1.addNeighbour(vertex4);
-        vertex4.addNeighbour(vertex5);
-        vertex2.addNeighbour(vertex3);
-
-        bfs.bfs(vertex1);
+        System.out.println("Choose algorithm for test:");
+        System.out.println("0 - BreadthFirstSearch");
+        System.out.println("1 - DepthFirstSearch (Iterative)");
+        System.out.print("Choose one:  ");
+        switch (new Scanner(System.in).nextInt()){
+            case 0:
+                BfsTester.test();
+                break;
+            case 1:
+                DepthFirstSearchTester.test();
+                break;
+            case 2:
+                RecursiveDepthFirstSearchTester.test();
+                break;
+        }
     }
 }

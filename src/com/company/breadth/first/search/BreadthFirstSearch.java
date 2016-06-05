@@ -1,4 +1,5 @@
-package com.company;
+package com.company.breadth.first.search;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
