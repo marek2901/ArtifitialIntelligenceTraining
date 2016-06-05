@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Choose algorithm for test:");
         System.out.println("0 - BreadthFirstSearch");
         System.out.println("1 - DepthFirstSearch (Iterative)");
+        System.out.println("2 - DepthFirstSearch (Recursive)");
         System.out.print("Choose one:  ");
         switch (new Scanner(System.in).nextInt()){
             case 0:
