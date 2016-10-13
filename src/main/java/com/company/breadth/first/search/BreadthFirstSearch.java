@@ -7,13 +7,13 @@ import java.util.Queue;
 
 class BreadthFirstSearch {
 
-    void bfs(Vertex root){
+    void bfs(Vertex root) {
         Queue<Vertex> queue = new LinkedList<>();
 
         root.setVisited(true);
         queue.add(root);
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             Vertex mVertex = queue.remove();
             System.out.println(mVertex);
 

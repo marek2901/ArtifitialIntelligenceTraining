@@ -1,14 +1,12 @@
 package com.company;
 
-import com.company.breadth.first.search.BfsTester;
-import com.company.depth.first.search.iterative.DepthFirstSearchTester;
-import com.company.depth.first.search.recursive.RecursiveDepthFirstSearchTester;
-import com.company.iterative.deepening.deth.first.search.IterativeDeepeningDepthFirstSearchTester;
-
 import java.util.Scanner;
 
-public class Main {
+/**
+ * Hello world!
+ */
 
+public class App {
     public static void main(String[] args) {
         System.out.println("Choose algorithm for test:");
         System.out.println("0 - BreadthFirstSearch");
@@ -16,18 +14,18 @@ public class Main {
         System.out.println("2 - DepthFirstSearch (Recursive)");
         System.out.println("3 - IterativeDeepeningDepthFirstSearch");
         System.out.print("Choose one:  ");
-        switch (new Scanner(System.in).nextInt()){
+        switch (new Scanner(System.in).nextInt()) {
             case 0:
-                BfsTester.test();
+                com.company.breadth.first.search.BfsTester.test();
                 break;
             case 1:
-                DepthFirstSearchTester.test();
+                com.company.depth.first.search.iterative.DepthFirstSearchTester.test();
                 break;
             case 2:
-                RecursiveDepthFirstSearchTester.test();
+                com.company.depth.first.search.recursive.RecursiveDepthFirstSearchTester.test();
                 break;
             case 3:
-                IterativeDeepeningDepthFirstSearchTester.test();
+                com.company.iterative.deepening.deth.first.search.IterativeDeepeningDepthFirstSearchTester.test();
                 break;
         }
     }

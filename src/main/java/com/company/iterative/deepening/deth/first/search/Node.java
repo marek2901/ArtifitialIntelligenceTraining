@@ -9,11 +9,11 @@ public class Node {
     private int depthLevel;
     private List<Node> adjecenciesList = new ArrayList<>();
 
-    public Node(String name){
+    public Node(String name) {
         this.name = name;
     }
 
-    public void addNeghbour(Node node){
+    public void addNeghbour(Node node) {
         this.adjecenciesList.add(node);
     }
 
@@ -39,7 +39,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return String.format("\n[ Node::name: %s ]\n",name);
+        return String.format("\n[ Node::name: %s ]\n", name);
     }
 
     @Override

@@ -10,12 +10,12 @@ public class Algorithm {
         this.targetNode = targetNode;
     }
 
-    public void runDeepeningSearch(Node startingNode){
+    public void runDeepeningSearch(Node startingNode) {
         int depth = 0;
 
-        while (!isTargetFound){
+        while (!isTargetFound) {
             dfs(startingNode, depth);
-            depth ++;
+            depth++;
         }
 
     }
@@ -29,13 +29,13 @@ public class Algorithm {
             Node currentNode = stack.pop();
             System.out.println(currentNode);
 
-            if(currentNode.equals(this.targetNode)){
+            if (currentNode.equals(this.targetNode)) {
                 System.out.println("Found node ::)");
                 this.isTargetFound = true;
                 return;
             }
 
-            if(currentNode.getDepthLevel() >= depth){
+            if (currentNode.getDepthLevel() >= depth) {
                 continue;
             }
 

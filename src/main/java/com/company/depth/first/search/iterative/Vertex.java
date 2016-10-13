@@ -9,11 +9,11 @@ class Vertex {
     private List<Vertex> adjecanciesList = new ArrayList<>();
     private Vertex predecessor;
 
-    public Vertex(String name){
+    public Vertex(String name) {
         this.name = name;
     }
 
-    public void addNeghbour(Vertex neigbour){
+    public void addNeghbour(Vertex neigbour) {
         adjecanciesList.add(neigbour);
     }
 

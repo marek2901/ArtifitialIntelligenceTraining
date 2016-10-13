@@ -15,7 +15,7 @@ class Vertex {
         this.data = data;
     }
 
-    void addNeighbour(Vertex vertex){
+    void addNeighbour(Vertex vertex) {
         this.neighbours.add(vertex);
     }
 

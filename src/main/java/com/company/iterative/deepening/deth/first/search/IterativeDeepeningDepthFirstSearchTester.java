@@ -1,7 +1,7 @@
 package com.company.iterative.deepening.deth.first.search;
 
 public class IterativeDeepeningDepthFirstSearchTester {
-    public static void test(){
+    public static void test() {
         Node node1 = new Node("A");
         Node node2 = new Node("b");
         Node node3 = new Node("c");

@@ -1,7 +1,7 @@
 package com.company.depth.first.search.iterative;
 
 public class DepthFirstSearchTester {
-    public static void test(){
+    public static void test() {
         Vertex vertexA = new Vertex("A");
         Vertex vertexB = new Vertex("B");
         Vertex vertexC = new Vertex("C");

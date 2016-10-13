@@ -1,7 +1,7 @@
 package com.company.breadth.first.search;
 
 public class BfsTester {
-    public static void test(){
+    public static void test() {
         BreadthFirstSearch bfs = new BreadthFirstSearch();
 
         Vertex vertex1 = new Vertex(1);
