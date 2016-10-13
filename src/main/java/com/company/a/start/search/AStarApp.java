@@ -5,7 +5,7 @@ package com.company.a.start.search;
  * on 14.10.2016.
  */
 public class AStarApp {
-    public static void main(String[] args) {
+    public static void main() {
         Node node1 = new Node("A");
         Node node2 = new Node("B");
         Node node3 = new Node("C");
